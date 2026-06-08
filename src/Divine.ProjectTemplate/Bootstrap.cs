@@ -25,7 +25,7 @@ internal sealed class Bootstrap : Bootstrapper
     {
         Console.WriteLine("OnMainActivate: Hello World");
 
-        var menu = MenuManager.HeroesMenu.AddMenu("Divine.ProjectTemplate");
+        var menu = MenuManager.AddMenu("Divine.ProjectTemplate");
         EnableSwitcher = menu.AddSwitcher("Enable");
         ComboHoldKey = menu.AddHoldKey("Combo", Key.D);
     }
